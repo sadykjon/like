@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import CommentsComponent from './Components/Comments-component';
+import LikeComponent from './Components/Like-component';
 
-function App() {
+
+ const App=()=> {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className='wrap'>
+        <div className="card">
+          <div className="card-image">
+            <img src="https://www.researchgate.net/publication/368688549/figure/fig1/AS:11431281121583182@1677036943508/Will-a-user-charmed-by-the-first-impression-created-by-ChatGPT-abandon-proven.jpg" alt="" srcset="" />
+            <LikeComponent/>
+          </div>
+          <CommentsComponent/>
+        </div>
+      </div>
     </div>
   );
 }
